@@ -2,8 +2,6 @@ $(function() {
   $('a').click(function() {
     $('#portfolioModal').removeClass('hide');
     $('#portfolioModal').removeClass('in');
-    $('#portfolioModal').removeClass('hide');
-    $('#portfolioModal').removeClass('in');
   });
 // Portfolio button
 	$('.port').click(function(){
