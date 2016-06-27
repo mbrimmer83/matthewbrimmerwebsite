@@ -1,6 +1,9 @@
 body {
   background-image: url("back1.jpg");
 }
+#plugin {
+  z-index: 10;
+}
 .btn:focus {
   outline: inherit;
 }
