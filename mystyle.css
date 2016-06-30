@@ -2,13 +2,18 @@ body {
   background-image: url("back1.jpg");
   padding-top: 60px;
 }
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+}
 .progress {
   min-width: 10%;
   max-width: 15%;
-  background: rgba(255, 255, 255, 1); border: 0px solid rgba(173, 69, 69, 1); border-radius: 4px; height: 20px;
+  background: rgba(255, 255, 255, 1); border: 2px solid rgba(0, 0, 0, 1); border-radius: 4px; height: 23px;
 }
 .progress-bar-custom {
-  background: rgba(255, 255, 255, 1); background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%); background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: rgba(19, 48, 212, 1); background: -webkit-linear-gradient(top, rgba(19, 19, 31, 1) 0%, rgba(19, 48, 212, 1) 100%); background: linear-gradient(to bottom, rgba(19, 19, 31, 1) 0%, rgba(19, 48, 212, 1) 100%);
 }
 .box-1 {
   background-color: white;
@@ -24,7 +29,7 @@ body {
   min-height: 20%;
   margin-top: 15px;
 }
-.box-3 {
+#box-3 {
   background-color: white;
   float: center;
   min-width: 90%;
