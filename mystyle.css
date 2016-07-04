@@ -7,6 +7,9 @@ table {
   border-collapse: separate;
   border-spacing: 10px 10px;
 }
+img {
+  border-bottom: solid 3px black;
+}
 .progress {
   min-width: 10%;
   max-width: 15%;
