@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <script src="jquery.js"></script>
-    <script src="../matthewbrimmer.com/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="mystyle.css">
     <script src="matthewbrimmer.js"></script>
     <!-- LinkedIn data -->
   </head>
   <body>
+    <a name="top"></a>
     <!-- navbar -->
     <nav role="navigation" class="navbar navbar-fixed-top navbar-inverse">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,9 +32,9 @@
         <ul class="nav navbar-nav">
           <li><a href="#resumeModal" class="btn btn-lg btn-success" data-toggle="modal" data-target="#resumeModal">Resume</a></li>
           <li><a href="#/portfolio" class="port">Portfolio</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <!-- social media icons -->
         <div class="social">
@@ -49,18 +50,57 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="box-1">
-            <h1>picture</h1>
+          <div id="box-1">
+            <span>
+            <img class="matthew" src="./images/matthew1.jpg" alt="" />
+          </span>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="box-2">
-            <h1>Portfolio</h1>
+          <div id="box-2">
+            <h1>Projects</h1>
+            <table>
+              <tr>
+                <td>Memory Game</td>
+                <td>Tic Tac Toe</td>
+                <td>BlackJack</td>
+                <td>Sportakus</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./memorygame/index.html">
+                    <img class="memory" src="./images/memorygame.png" alt="">
+                  </a>
+                </td>
+                <td>
+                  <a href="./tictactoe/index.html">
+                    <img class="tictac" src="./images/Tic-Tac-Toe.jpg" alt="">
+                  </a>
+                </td>
+                <td>
+                  <a href="./blackjack/index.html">
+                    <img class="blackjack" src="./images/blackjack.svg" alt="">
+                  </a>
+                </td>
+                <td>
+                  <a href="http://sportakus.surge.sh">
+                    <img class="sportakus" src="./images/sportakus.png" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/mbrimmer83/MemoryGame">Memory Game GitHub</td>
+                <td><a href="https://github.com/mbrimmer83/tictactoe">Tic Tac Toe GitHub</td>
+                <td><a href="https://github.com/mbrimmer83/blackjack">BlackJack GitHub</td>
+                <td><a href="https://github.com/DigitalCrafts-May-2016-Cohort/sportakus">Sportakus GitHub</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
+      <a name="skills"></a>
       <div class="row">
         <div class="col-md-12" id="box-3">
           <table>
@@ -167,11 +207,26 @@
           </table>
         </div>
       </div>
+      <!-- <a name="about"></a>
       <div class="row">
         <div class="col-md-12">
-          <div class="box-4">
+          <div id="box-4">
             <h1>About me</h1>
-            <p>Hi, I'm Matthew Brimmer. I am a software developer with DigitalCrafts.</p>
+            <p>Hi, I'm Matthew Brimmer. I am a software developer with DigitalCrafts coding bootcamp. </p>
+          </div>
+        </div>
+      </div> -->
+      <a name="contact"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="box-5">
+            <h1>Contact me</h1>
+            <p>Matthew Brimmer</p>
+            <p>Phone: 770-900-2043</p>
+            <p>Email: mbrimmer1@gmail.com</p>
+            <a href="https://github.com/mbrimmer83">https://github.com/mbrimmer83</a><br>
+            <a href="https://linkedin.com/in/matthewbrimmer">https://linkedin.com/in/matthewbrimmer</a>
+
           </div>
         </div>
       </div>
@@ -184,7 +239,9 @@
             <h4 class="modal-title" id="myModalLabel">Matthew Brimmer Resume</h4>
           </div>
           <div class="modal-body">
-            <embed src="Matthew T Brimmer Developer resume 2016.pdf" width="800" height="1000"></embed>
+            <object data="./datafiles/mbrimmerresume.pdf" type="application/pdf" width="800" height="1000">
+              alt : <a href="./datafiles/mbrimmerresume.pdf">test.pdf</a>
+            </object>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
