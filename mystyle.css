@@ -1,6 +1,6 @@
 body {
   background-image: url("back1.jpg");
-  padding-top: 60px;
+  padding-top: 80px;
 }
 table {
   width: 100%;
@@ -13,6 +13,9 @@ img {
 .gitlinks {
   margin-top: 50px;
   padding-top: 50px;
+}
+.col-md-12 {
+  padding: 0;
 }
 .progress {
   /*min-width: 10%;
@@ -38,6 +41,7 @@ img.matthew {
   float: center;
   min-width: 90%;
   margin-top: 15px;
+  margin-bottom: 15px:
   padding-left: 2px;
 }
 #box-2 {
@@ -46,6 +50,7 @@ img.matthew {
   float: center;
   min-width: 90%;
   margin-top: 15px;
+  padding: 1% 0 1% 2%;
 }
 img.memory {
   max-width: 350px;
@@ -75,6 +80,7 @@ img.sportakus {
   min-width: 90%;
   min-height: 20%;
   margin-top: 15px;
+  padding: 1% 0 1% 2%;
 }
 #box-4 {
   border-radius: 10px;
@@ -83,6 +89,7 @@ img.sportakus {
   min-width: 90%;
   min-height: 20%;
   margin-top: 15px;
+  padding: 1% 0 1% 2%;
   padding-left: 10px;
   padding-top: 2px;
 }
@@ -93,9 +100,7 @@ img.sportakus {
   min-width: 90%;
   min-height: 20%;
   margin-top: 15px;
-  padding-left: 10px;
-  padding-top: 2px;
-  padding-bottom: 15px;
+  padding: 1% 0 1% 2%;
   margin-bottom: 75px;
 }
 #plugin {
