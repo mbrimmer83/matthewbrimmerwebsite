@@ -1,6 +1,7 @@
 body {
-  background-image: url("back1.jpg");
-  padding-top: 80px;
+background-color: #071C2C;
+font-family: 'Open Sans', sans-serif;
+overflow-x: hidden;
 }
 table {
   width: 100%;
@@ -9,56 +10,131 @@ table {
 }
 img {
   border-bottom: solid 3px black;
+
+}
+h1 {
+  padding-left: 10px;
+  margin: 0;
+}
+a {
+  color: #9d9d9d;
+}
+a:focus a:hover {
+  color: #9d9d9d;
 }
 .gitlinks {
   margin-top: 50px;
   padding-top: 50px;
 }
-.col-md-12 {
-  padding: 0;
-}
-.progress {
-  /*min-width: 10%;
-  max-width: 15%;*/
-  background: rgba(255, 255, 255, 1); border: 2px solid rgba(0, 0, 0, 1); border-radius: 4px; height: 23px;
-}
-.progress-bar-custom {
-  background: rgba(19, 48, 212, 1); background: -webkit-linear-gradient(top, rgba(19, 19, 31, 1) 0%, rgba(19, 48, 212, 1) 100%); background: linear-gradient(to bottom, rgba(19, 19, 31, 1) 0%, rgba(19, 48, 212, 1) 100%);
-}
+.progress {background: rgba(255, 255, 255, 1); background: -webkit-linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%); background: linear-gradient(to bottom, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%); border: 0px solid rgba(245, 245, 245, 1); border-radius: 4px; height: 20px;}
+.progress-bar-custom {background: rgba(124, 130, 135, 1); background: -webkit-linear-gradient(top, rgba(212, 212, 212, 1) 0%, rgba(124, 130, 135, 1) 100%); background: linear-gradient(to bottom, rgba(212, 212, 212, 1) 0%, rgba(124, 130, 135, 1) 100%);}
 img.matthew {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 15px;
-  margin-top: 15px;
   border-bottom: none;
   -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
+img.matthew:hover {
+  filter: none;
+-webkit-filter: none;
+-moz-filter: none;
+-ms-filter: none;
+}
+.container {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+#box-0 {
+  background-color: #005DA4;
+  color: white;
+  margin-top: 56px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 100px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #9d9d9d;
+  letter-spacing: -5px;
+  line-height: 120px;
+}
+.welcome {
+  color: #393939;
+}
+.small {
+  color: #393939;
+}
+.and {
+  color: #393939;
+}
+.name {
+  color: #9d9d9d;
+  text-shadow: 2px 2px 4px #393939;
+}
+.title {
+  color: #393939;
+}
 #box-1 {
-  border-radius: 10px;
-  background-color: white;
+  /*border-radius: 10px;*/
+  background-color: #071C2C;
+  color: #9d9d9d;
+  text-shadow: .5px .5px 1px #393939;
   float: center;
-  min-width: 90%;
-  margin-top: 15px;
-  margin-bottom: 15px:
-  padding-left: 2px;
+  width: 100%;
 }
 #box-2 {
-  border-radius: 10px;
-  background-color: white;
+  background-color: #005DA4;
+  color: #9d9d9d;
+  text-shadow: 1px 1px 2px #393939;
+  font-size: 25px;
   float: center;
-  min-width: 90%;
-  margin-top: 15px;
-  padding: 1% 0 1% 2%;
+  padding-left: 10px;
+}
+#box-3 {
+  background-color: #071C2C;
+  float: center;
+  font-size: 25px;
+  color: #393939;
+  text-shadow: .5px .5px 1px #9D9D9D;
+  width: 100%;
+  padding-top: 10px;
+}
+/*#box-4 {
+  border-radius: 10px;
+  background-color: #FF5A09;
+  float: center;
+  width 100%
+  min-height: 20%;
+  padding-left: 10px;
+  padding-top: 2px;
+}*/
+#box-5 {
+  background-color: #005DA4;
+  color: #9d9d9d;
+  text-shadow: 1px 1px 2px #393939;
+  font-size: 25px;
+  float: center;
+  width: 100%;
+  min-height: 20%;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 15px;
+  margin-bottom: 75px;
+}
+#box-6 {
+  background-color: #071C2C;
+  color: #393939;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 img.memory {
   max-width: 350px;
   max-height: 200px;
   border-bottom: none;
-  margin-bottom: 50px;
 }
-img.tictac {
+img.roast {
   max-width: 200px;
   max-height: 200px;
   border-bottom: none;
@@ -73,36 +149,6 @@ img.sportakus {
   max-height: 200px;
   border-bottom: none;
 }
-#box-3 {
-  border-radius: 10px;
-  background-color: white;
-  float: center;
-  min-width: 90%;
-  min-height: 20%;
-  margin-top: 15px;
-  padding: 1% 0 1% 2%;
-}
-#box-4 {
-  border-radius: 10px;
-  background-color: white;
-  float: center;
-  min-width: 90%;
-  min-height: 20%;
-  margin-top: 15px;
-  padding: 1% 0 1% 2%;
-  padding-left: 10px;
-  padding-top: 2px;
-}
-#box-5 {
-  border-radius: 10px;
-  background-color: white;
-  float: center;
-  min-width: 90%;
-  min-height: 20%;
-  margin-top: 15px;
-  padding: 1% 0 1% 2%;
-  margin-bottom: 75px;
-}
 #plugin {
   z-index: 10;
 }
@@ -111,18 +157,32 @@ img.sportakus {
 }
 .navbar {
   background-color: transparent;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   color: white;
   font-size: 18px;
-  font-family: Garamond;
+  font-family: 'Open Sans', sans-serif;
 }
-.navbar-default {
-  font-size: 2.0em;
-  font-family: Garamond;
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #005DA4;
 }
-.navbar-brand {
-  font-size: 1.0em;
-  font-family: Garamond;
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+  color: #005DA4;
+}
+/*Email form*/
+.form-control {
+  width: 75%;
+}
+.emailButton {
+  text-align: center;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+}
+.about-title {
+  text-align: center;
+  font-size: 50px;
+  padding: 5px
 }
 .btn-success {
   background-color: #9d9d9d;
@@ -139,14 +199,14 @@ img.sportakus {
 .gameButton {
   float: right;
 }
-#theIframe {
-  transform: scale(3);
-}
 .social {
   margin: 0;
   padding: 0;
 }
-
+.social-footer {
+  float: none;
+  text-align: center;
+}
 .social ul {
   margin: 0;
   padding: 5px;

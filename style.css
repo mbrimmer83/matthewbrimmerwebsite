@@ -1,0 +1,281 @@
+body {
+  background-image: url("back1.jpg");
+}
+
+/*----------Intro----------*/
+
+.jumbotron {
+  background: rgba(247, 246, 244, 0.6);
+  height: 610px;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.jumbotron h1 {
+  color: #ACA9A0;
+  position: fixed;
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: 900;
+  letter-spacing: -5px;
+  line-height: 80px;
+  text-shadow: 1px 1px 1px #787777;
+  font-size: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 10;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+span.small {
+	font-size: 80px;
+}
+
+span.name {
+	color: green;
+	text-shadow: 1px 0px 1px #787777;
+}
+
+span.amp {
+	display: inline-block;
+	font-size: 80px;
+	font-weight: normal;
+	font-family: Baskerville, 'Maven Pro', serif;
+	font-style: italic;
+}
+span.intro_line {
+	background: url(../img/intro_line.png) no-repeat;
+	width: 254px;
+	height: 8px;
+	display: inline-block;
+	margin: 0 20px 12px 25px;
+}
+
+/*----------Navbar----------*/
+
+.navbar {
+  background: #F8F6F2;
+	min-height: 34px;
+	border-radius: 0px;
+	width: 100%;
+	text-align: center;
+	z-index: 40;
+	margin: 0px;
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(129, 129, 129, 0.67);
+	-moz-box-shadow: 0px 0px 7px 0px rgba(129, 129, 129, 0.67);
+	box-shadow: 0px 0px 7px 0px rgba(129, 129, 129, 0.67);
+}
+
+.navbar-toggle {
+	float: left;
+	margin-left: 5px;
+	border: 1px solid black;
+	z-index: 55;
+}
+.navbar-nav {
+  margin-top: 4px;
+  float: none;
+  display: inline-block;
+}
+
+.navbar-nav li a {
+  padding: 6px 30px 6px 30px;
+  color: #999;
+}
+
+.navbar-nav li a:hover {
+  background: #9C034F;
+  opacity:1;
+  color: #fff;
+}
+
+.navbar ul li {
+	display: inline;
+}
+
+nav a {
+	font-size: 18px;
+	font-weight: 300;
+	color: #4a4949;
+}
+
+/*----------Social Icons----------*/
+
+.social {
+  margin: 0;
+  padding: 0;
+}
+
+.social ul {
+  margin: 0;
+  padding: 5px;
+}
+
+.social ul li {
+  margin: 5px;
+  list-style: none outside none;
+  display: inline-block;
+  float: right;
+}
+.social i {
+  width: 40px;
+  height: 40px;
+  color: #FFF;
+  /*background-color: #blue;*/
+  font-size: 22px;
+  text-align:center;
+  padding-top: 12px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+  color: #FFF;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}
+.social .fa-facebook:hover { /* round facebook icon*/
+  background: #4060A5;
+}
+.social .fa-github:hover { /* round github icon*/
+  background: #343434;
+  border: solid 1px white;
+}
+.social .fa-linkedin:hover { /* round linkedin icon*/
+  background: #0094BC;
+}
+
+/*----------Body Boxes----------*/
+
+#box-1 {
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  float: center;
+  width: 100%;
+  padding-left: 2px;
+  z-index: 15;
+}
+
+#box-2 {
+  border-radius: 10px;
+  background-color: white;
+  float: center;
+  width: 100%;
+  padding: 1% 0 1% 2%;
+  z-index: 15;
+}
+
+#box-3 {
+  border-radius: 10px;
+  background-color: white;
+  float: center;
+  width: 100%
+  padding: 1% 0 1% 2%;
+  z-index: 15;
+}
+
+#box-4 {
+  border-radius: 10px;
+  background-color: white;
+  float: center;
+  width: 100%;
+  padding: 1% 0 1% 2%;
+  padding-left: 10px;
+  padding-top: 2px;
+  z-index: 15;
+}
+
+#box-5 {
+  border-radius: 10px;
+  background-color: white;
+  float: center;
+  min-width: 90%;
+  min-height: 20%;
+  margin-top: 15px;
+  padding: 1% 0 1% 2%;
+  margin-bottom: 75px;
+  z-index: 15;
+}
+
+img.memory {
+  max-width: 350px;
+  max-height: 200px;
+  border-bottom: none;
+  margin-bottom: 50px;
+}
+img.tictac {
+  max-width: 200px;
+  max-height: 200px;
+  border-bottom: none;
+}
+img.blackjack {
+  max-width: 200px;
+  max-height: 200px;
+  border-bottom: none;
+}
+img.sportakus {
+  max-width: 200px;
+  max-height: 200px;
+  border-bottom: none;
+}
+.btn-success {
+  background-color: #9d9d9d;
+  border-color: #9d9d9d;
+  background-image: none;
+  box-shadow: none;
+}
+.btn {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  border: none;
+}
+.gameButton {
+  float: right;
+}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+}
+img {
+  border-bottom: solid 3px black;
+}
+.gitlinks {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+.col-md-12 {
+  padding: 0;
+}
+.progress {
+  /*min-width: 10%;
+  max-width: 15%;*/
+  background: rgba(255, 255, 255, 1); border: 2px solid rgba(0, 0, 0, 1); border-radius: 4px; height: 23px;
+}
+.progress-bar-custom {
+  background: rgba(19, 48, 212, 1); background: -webkit-linear-gradient(top, rgba(19, 19, 31, 1) 0%, rgba(19, 48, 212, 1) 100%); background: linear-gradient(to bottom, rgba(19, 19, 31, 1) 0%, rgba(19, 48, 212, 1) 100%);
+}
+img.matthew {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-bottom: none;
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
