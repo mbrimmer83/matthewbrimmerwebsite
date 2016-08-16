@@ -129,25 +129,94 @@ img.matthew:hover {
   padding-top: 10px;
   padding-bottom: 15px;
 }
+.project1 {
+  background-color: #005DA4;
+  color: #9d9d9d;
+  text-shadow: 1px 1px 2px #393939;
+  font-size: 25px;
+  float: center;
+  padding-top: 10px;
+  padding-left: 30px;
+  min-height: 400px;
+}
+.project2 {
+  background-color: #071C2C;
+  float: center;
+  font-size: 25px;
+  color: #393939;
+  text-shadow: .5px .5px 1px #9D9D9D;
+  width: 100%;
+  padding-top: 10px;
+  margin-left: 30px;
+  min-height: 400px;
+}
+.project3 {
+  background-color: #005DA4;
+  color: #9d9d9d;
+  text-shadow: 1px 1px 2px #393939;
+  font-size: 25px;
+  float: center;
+  padding-left: 10px;
+  padding-left: 30px;
+  min-height: 400px;
+}
+.project4 {
+  background-color: #071C2C;
+  float: center;
+  font-size: 25px;
+  color: #393939;
+  text-shadow: .5px .5px 1px #9D9D9D;
+  width: 100%;
+  padding-top: 10px;
+  margin-left: 30px;
+  min-height: 400px;
+}
+.project5 {
+  background-color: #005DA4;
+  color: #9d9d9d;
+  text-shadow: 1px 1px 2px #393939;
+  font-size: 25px;
+  float: center;
+  padding-left: 10px;
+  padding-left: 30px;
+  min-height: 400px;
+}
 img.memory {
-  max-width: 350px;
-  max-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
   border-bottom: none;
 }
 img.roast {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
   border-bottom: none;
 }
 img.blackjack {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 400px;
+  min-height: 250px;
   border-bottom: none;
 }
 img.sportakus {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
   border-bottom: none;
+}
+img.valet {
+  max-width: 400px;
+  max-height: 400px;
+  border-bottom: none;
+}
+.projecttitle {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }
 #plugin {
   z-index: 10;
@@ -176,6 +245,12 @@ img.sportakus {
   text-align: center;
 }
 .title {
+  text-align: center;
+  font-size: 50px;
+}
+.titleContact {
+  color: #9d9d9d;
+  text-shadow: 1px 1px 2px #393939;
   text-align: center;
   font-size: 50px;
 }
