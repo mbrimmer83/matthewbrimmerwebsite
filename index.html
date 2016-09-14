@@ -30,7 +30,7 @@
         <li><a href="#top">Top</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#work">My Work</a></li>
-        <li><a href="#connect">Connect</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <!-- social media icons -->
@@ -88,6 +88,7 @@
               <p>-- Albert Einstein</p>
               <p>Courage is not having the strength to go on; it is going on when you don't have the strength.</p>
               <p>-- Theodore Roosevelt</p>
+              <button href="#resumeModal" id="modal" data-toggle="modal" data-target="#resumeModal">Get my Resume</button>
             </span>
           </div>
         </div>
@@ -97,123 +98,52 @@
         <h1 class="projecttitle" id="work">My Work</h1>
         <!-- row one -->
         <div class="row projectContainer">
-          <div class="col-xs-6 col-md-4 offset-md-4">
+          <div class="col-xs-6 col-md-4">
             <h3>DC Roasters</h3>
-            <input type="image" src="./images/coffee.png" class="portfolioPic" href="#roasterModal" id="modal" data-toggle="modal" data-target="#roasterModal">
-            <p class="detailsBox">DC Roasters is a full stack e-commerce website for users to purchase coffee via a monthly subscriptions. Users signup, login, place orders and make payments. It was built using the MEAN Stack(MongoDB, Express, AngularJs, and NodeJs).</p>
+            <input type="image" src="./images/coffee.png" class="portfolioPic" title="DC Roaster Details" href="#roasterModal" id="modal" data-toggle="modal" data-target="#roasterModal">
+            <p class="detailsBox">DC Roasters is a full stack e-commerce website for users to purchase coffee via a monthly subscriptions. Users signup, login, place orders and make payments.</p>
           </div>
           <div class="col-xs-6 col-md-4 offset-md-4">
             <h3>Sportakus</h3>
-            <input type="image" src="./images/sportakus.png" class="portfolioPic" href="#sportakusModal" id="modal" data-toggle="modal" data-target="#sportakusModal">
-            <p class="detailsBox">Sportakus is a frontend sports aggragator that allows the user to select a sport and then select events based on venue's displayed on a google map. The user can see all the events and may choose to buy ticket from Ticket Master. AngularJs, Bootstrap, HTML5 and CSS3 were used for the project.</p>
+            <input type="image" src="./images/sportakus.png" class="portfolioPic" title="Sportakus Details" href="#sportakusModal" id="modal" data-toggle="modal" data-target="#sportakusModal">
+            <p class="detailsBox">Sportakus is a frontend sports aggragator that allows the user to select a sport and then select a venue displayed on a google map. The user can see the events for that choosen sports venue and ticket information from Ticket Master.</p>
           </div>
           <div class="col-xs-6 col-md-4 offset-md-4">
             <h3>BlackJack</h3>
-            <input type="image" src="./images/blackjack.png" class="portfolioPic" href="#blackjackModal" id="modal" data-toggle="modal" data-target="#blackjackModal">
-            <p class="detailsBox">BlackJack Casino is a frontend blackjack game where the user plays against the dealer. The game includes score keeping and checks for winners and busts. The game was built with Javascript, JQuery, HTML5, and CSS3.</p>
+            <input type="image" src="./images/blackjack.png" class="portfolioPic" title="BlackJack Details" href="#blackjackModal" id="modal" data-toggle="modal" data-target="#blackjackModal">
+            <p class="detailsBox">BlackJack Casino is a frontend blackjack game where the user plays against the dealer. The game includes score keeping and checks for winners and busts.</p>
           </div>
         </div>
 
         <!-- row two -->
-        <div class="row">
+        <div class="row projectContainer">
           <div class="col-xs-6 col-md-4 offset-md-4">
             <h3>Memory Game</h3>
-            <input type="image" src="./images/memory.png" class="portfolioPic" href="#memoryModal" id="modal" data-toggle="modal" data-target="#memoryModal">
-            <p class="detailsBox">The Memory Game is a matching game that requires the user to select a card and then find its match after the card turns over. The project uses Javascript, JQuery, HTML5, and CSS3. The game is customized for DigitalCrafts. </p>
+            <input type="image" src="./images/memory.png" class="portfolioPic" title="Memory Game Details" href="#memoryModal" id="modal" data-toggle="modal" data-target="#memoryModal">
+            <p class="detailsBox">The Memory Game is a matching game that requires the user to select a card and then find its match after the card turns over. The game is customized for DigitalCrafts. </p>
           </div>
           <div class="col-xs-6 col-md-4 offset-md-4">
             <h3>Chirp</h3>
-            <input type="image" src="./images/chirp.png" class="portfolioPic" href="#chirpModal" id="modal" data-toggle="modal" data-target="#chirpModal">
-            <p class="detailsBox">The Chirp application is a dynamic database driven web application that is modeled after Twitter. Users can chirp messages, follow friends, like chirps, and rechirp other chirps. The project uses Python, Flask, Jinja, HTML, CSS, BootStrap, and PostgreSQL</p>
+            <input type="image" src="./images/chirp.png" class="portfolioPic" title="Chirp Details" href="#chirpModal" id="modal" data-toggle="modal" data-target="#chirpModal">
+            <p class="detailsBox">The Chirp application is a dynamic database driven web application that is modeled after Twitter. Users can chirp messages, follow friends, like chirps, and rechirp other chirps.</p>
           </div>
           <div class="col-xs-6 col-md-4 offset-md-4">
             <h3>Daily Planner</h3>
-            <input type="image" src="./images/planner.png" class="portfolioPic" href="#plannerModal" id="modal" data-toggle="modal" data-target="#plannerModal">
+            <input type="image" src="./images/planner.png" class="portfolioPic" title="Daily Planner Details" href="#plannerModal" id="modal" data-toggle="modal" data-target="#plannerModal">
             <p class="detailsBox">The Daily Planner application allow users to schedule hourly appointments with</p>
           </div>
         </div>
 
         <!-- row three -->
-        <div class="row">
+        <div class="row projectContainer">
           <div class="col-md-4 offset-md-3">
             <h3>Valet Me</h3>
-            <input type="image" src="./images/valet.png" class="portfolioPic" href="#valetModal" id="modal" data-toggle="modal" data-target="#valetModal">
-            <p class="detailsBox">Valet Me is a Full Stack cloud based parking management system. The mobile app allows user to signup, login, request there car be returned, and tip or pay the valet company. Push notification are used for notifying users when there car is ready and includes a live interactive administration panel that uses socket.io to help manage the parking lot. The Project uses AngularJs, Bootstrap, HTML5, CSS3, NodeJs, Express, Ionic, and Socket.io.</p>
+            <input type="image" src="./images/valet.png" class="portfolioPic" title="Valet Me Details" href="#valetModal" id="modal" data-toggle="modal" data-target="#valetModal">
+            <p class="detailsBox">Valet Me is a Full Stack cloud based parking management system. The mobile app allows user to signup, login, request there car be returned, and tip or pay the valet company. Push notification are used for notifying users when there car is ready and includes a live interactive administration panel that uses socket.io to help manage the parking lot.</p>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row project1">
-            <h1 class="projecttitle">Projects</h1>
-          <div class="col-md-6 left">
-            <h1>DC Roasters</h1>
-            <a href="http://coffeestore.matthewbrimmer.com">
-            </a><br>
-            <a href="https://github.com/mbrimmer83/CoffeeApp">View Repo on GitHub</a>
-          </div>
-          <div class="col-md-6 right">
-            <p>DC Roasters is a full stack e-commerce website for users to purchase coffee via a monthly subscriptions. Users signup, login, place orders and make payments. It was built using the MEAN Stack(MongoDB, Express, AngularJs, and NodeJs).</p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row project2">
-          <h1 class="projecttitle">Projects</h1>
-          <div class="col-md-6 left">
-            <p>Sportakus is a frontend sports aggragator that allows the user to select a sport and then select events based on venue's displayed on a google map. The user can see all the events and may choose to buy ticket from Ticket Master. AngularJs, Bootstrap, HTML5 and CSS3 were used for the project.</p>
-          </div>
-          <div class="col-md-6 sportRight">
-            <h1>Sportakus</h1>
-            <a href="http://sportakus.surge.sh">
-            </a><br>
-            <a href="https://github.com/DigitalCrafts-May-2016-Cohort/sportakus">Sportakus GitHub</a>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row project3">
-          <h1 class="projecttitle">Projects</h1>
-          <div class="col-md-6 left">
-            <h1>Valet Me -Coming 8/19/2016</h1>
-            <br>
-            <a href="https://github.com/mbrimmer83/finalproject">View Repo on GitHub</a>
-          </div>
-          <div class="col-md-6 right">
-            <p>Valet Me is a Full Stack cloud based parking management system. The mobile app allows user to signup, login, request there car be returned, and tip or pay the valet company. Push notification are used for notifying users when there car is ready and includes a live interactive administration panel that uses socket.io to help manage the parking lot. The Project uses AngularJs, Bootstrap, HTML5, CSS3, NodeJs, Express, Ionic, and Socket.io. </p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row project4">
-          <h1 class="projecttitle">Projects</h1>
-          <div class="col-md-6 left">
-            <p>The Memory Game is a matching game that requires the user to select a card and then find its match after the card turns over. The project uses Javascript, JQuery, HTML5, and CSS3. The game is customized for DigitalCrafts. </p>
-          </div>
-          <div class="col-md-6 right">
-            <h1>Memory Game</h1>
-            <a href="./memorygame/index.html">
 
-            </a><br>
-            <a href="https://github.com/mbrimmer83/MemoryGame">Memory Game GitHub</a>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row project5">
-          <h1 class="projecttitle">Projects</h1>
-          <div class="col-md-6 left">
-            <h1>BlackJack Casino</h1>
-            <a href="./blackjack/index.html">
-
-            </a>
-            <br>
-            <a href="https://github.com/mbrimmer83/blackjack">BlackJack GitHub</a>
-          </div>
-          <div class="col-md-6 right">
-            <p>BlackJack Casino is a frontend blackjack game where the user plays against the dealer. The game includes score keeping and checks for winners and busts. The game was built with Javascript, JQuery, HTML5, and CSS3.</p>
-          </div>
-        </div>
-      </div>
       <div class="row" id="skills">
         <div class="col-md-12" id="box-3">
           <table>
@@ -269,13 +199,13 @@
             </tr>
             <tr>
               <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
-                  45%
+                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                  50%
                 </div>
               </td>
               <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
-                  45%
+                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                  60%
                 </div>
               </td>
               <td class="progress">
@@ -301,18 +231,40 @@
                 </div>
               </td>
               <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
-                  45%
+                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                  70%
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>React JS</td>
+              <td>JSX</td>
+              <td>Ionic</td>
+            </tr>
+            <tr>
+              <td class="progress">
+                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                  40%
+                </div>
+              </td>
+              <td class="progress">
+                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                  40%
+                </div>
+              </td>
+              <td class="progress">
+                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                  60%
                 </div>
               </td>
             </tr>
           </table>
+          <p class="skillsText">My ratings are based on three factors that I use to rate my skill level for each technology. First is how much experience I have using the technology, second is the depth of my understanding of the technology, and third is how comfortable I am using the technology.</p>
         </div>
       </div>
       <div class="row" id="contact">
-        <div class="col-md-12">
-          <div id="box-5">
-            <h1 class="titleContact">Contact me</h1>
+        <h1 class="titleContact">Contact me</h1>
+        <div class="col-md-6 formStyle">
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -350,13 +302,13 @@
                 </div>
               </div>
             </form>
+          </div>
+          <div class="col-md-6 formStyle">
             <p>Matthew Brimmer</p>
             <p>Phone: 770-900-2043</p>
             <p>Email: mbrimmer1@gmail.com</p>
             <a href="https://github.com/mbrimmer83">https://github.com/mbrimmer83</a><br>
             <a href="https://linkedin.com/in/matthewbrimmer">https://linkedin.com/in/matthewbrimmer</a>
-            <button href="#resumeModal" id="modal" data-toggle="modal" data-target="#resumeModal">Resume</button>
-
           </div>
         </div>
       </div>
@@ -420,10 +372,22 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">DC Roaster</h4>
+            <h2 class="modal-title" id="myModalLabel">DC Roaster</h2>
           </div>
           <div class="modal-body">
-            <h1>The Body</h1>
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascipt</li>
+              <li>Angular JS</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Node JS</li>
+              <li>Bootstrap</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            <a href="http://coffeestore.matthewbrimmer.com">Live Demo</a><br>
+            <a href="https://github.com/mbrimmer83/CoffeeApp">View Repo on GitHub</a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
@@ -437,10 +401,19 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Sportakus</h4>
+            <h2 class="modal-title" id="myModalLabel">Sportakus</h2>
           </div>
           <div class="modal-body">
-            <h1>The Body</h1>
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascipt</li>
+              <li>Angular JS</li>
+              <li>Bootstrap</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            <a href="http://sportakus.surge.sh">Live Demo</a><br>
+            <a href="https://github.com/DigitalCrafts-May-2016-Cohort/sportakus">Sportakus GitHub</a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
@@ -457,7 +430,15 @@
             <h4 class="modal-title" id="myModalLabel">BlackJack</h4>
           </div>
           <div class="modal-body">
-            <h1>The Body</h1>
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascipt</li>
+              <li>JQuery</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            <a href="./blackjack/index.html">Live Demo</a><br>
+            <a href="https://github.com/mbrimmer83/blackjack">BlackJack GitHub</a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
@@ -471,10 +452,18 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Memory Game</h4>
+            <h2 class="modal-title" id="myModalLabel">Memory Game</h2>
           </div>
           <div class="modal-body">
-            <h1>The Body</h1>
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascipt</li>
+              <li>Jquery</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            <a href="./memorygame/index.html">Live Demo</a><br>
+            <a href="https://github.com/mbrimmer83/MemoryGame">Memory Game GitHub</a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
@@ -488,10 +477,22 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Chirp</h4>
+            <h2 class="modal-title" id="myModalLabel">Chirp</h2>
           </div>
           <div class="modal-body">
-            <h1>The Body</h1>
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Jinja</li>
+              <li>PostgreSQL</li>
+              <li>Bootstrap</li>
+              <li>JQuery</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            <a href="http://shielded-everglades-11512.herokuapp.com/">Live Demo</a><br>
+            <a href="https://github.com/mbrimmer83/chirpapp">Chirp GitHub</a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
@@ -505,10 +506,23 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Daily Planner</h4>
+            <h2 class="modal-title" id="myModalLabel">Daily Planner</h2>
           </div>
           <div class="modal-body">
-            <h1>The Body</h1>
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascipt</li>
+              <li>React JS</li>
+              <li>Flux</li>
+              <li>JSX</li>
+              <li>Webpack</li>
+              <li>Babel</li>
+              <li>Node JS</li>
+              <li>Bootstrap</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            <a href="https://github.com/mbrimmer83/reactModal">Daily Planner GitHub</a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
@@ -522,10 +536,25 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Valet Me</h4>
+            <h2 class="modal-title" id="myModalLabel">Valet Me</h2>
           </div>
           <div class="modal-body">
-            <h1>The Body</h1>
+            <h3>Movie coming soon</h3>
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascipt</li>
+              <li>Angular JS</li>
+              <li>PostgreSQL</li>
+              <li>Socket.IO</li>
+              <li>Ionic</li>
+              <li>Express</li>
+              <li>Node JS</li>
+              <li>Bootstrap</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            <a href="http://floating-castle-43284.herokuapp.com/#/home">Live Demo</a><br>
+            <a href="https://github.com/mbrimmer83/finalproject">Valet Me GitHub</a>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
