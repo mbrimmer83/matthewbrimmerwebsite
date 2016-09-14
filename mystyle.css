@@ -1,5 +1,5 @@
 body {
-background-color: #071C2C;
+background-color: #FFFFFF;
 font-family: 'Open Sans', sans-serif;
 overflow-x: hidden;
 }
@@ -48,9 +48,10 @@ img.matthew:hover {
   padding: 0;
 }
 #box-0 {
-  background-color: #005DA4;
-  color: white;
+  background-color: #e9e9e9;
+  color: #666666;
   margin-top: 56px;
+  padding: 100px 0 100px 0;
   text-align: center;
   font-weight: 900;
   font-size: 100px;
@@ -59,37 +60,21 @@ img.matthew:hover {
   letter-spacing: -5px;
   line-height: 120px;
 }
-.welcome {
-  color: #393939;
-}
-.small {
-  color: #393939;
-}
-.and {
-  color: #393939;
-}
 .name {
-  color: #9d9d9d;
-  text-shadow: 2px 2px 4px #393939;
-}
-.title {
-  color: #393939;
+  color: #071C2C;
+  text-shadow: 2px 2px 4px #666666;
 }
 #box-1 {
-  /*border-radius: 10px;*/
-  background-color: #071C2C;
-  color: #9d9d9d;
-  text-shadow: .5px .5px 1px #393939;
+  background-color: #FFFFFF;
+  color: #071C2C;
   float: center;
   width: 100%;
 }
 #box-2 {
-  background-color: #005DA4;
-  color: #9d9d9d;
-  text-shadow: 1px 1px 2px #393939;
-  font-size: 25px;
+  background-color: #e9e9e9;
+  color: #071C2C;
   float: center;
-  padding-left: 10px;
+  margin: auto;
 }
 #box-3 {
   background-color: #071C2C;
@@ -100,15 +85,6 @@ img.matthew:hover {
   width: 100%;
   padding-top: 10px;
 }
-/*#box-4 {
-  border-radius: 10px;
-  background-color: #FF5A09;
-  float: center;
-  width 100%
-  min-height: 20%;
-  padding-left: 10px;
-  padding-top: 2px;
-}*/
 #box-5 {
   background-color: #005DA4;
   color: #9d9d9d;
@@ -181,42 +157,22 @@ img.matthew:hover {
   padding-left: 30px;
   min-height: 400px;
 }
-img.memory {
-  max-width: 400px;
-  max-height: 400px;
-  border-bottom: none;
+img.portfolioPic {
+  width: 275px;
+  height: 225px;
+  border: 1px solid black;
 }
-img.roast {
-  max-width: 400px;
-  max-height: 400px;
-  border-bottom: none;
-}
-img.blackjack {
-  max-width: 400px;
-  max-height: 400px;
-  min-width: 400px;
-  min-height: 250px;
-  border-bottom: none;
-}
-img.sportakus {
-  max-width: 400px;
-  max-height: 400px;
-  border-bottom: none;
-}
-img.valet {
-  max-width: 400px;
-  max-height: 400px;
-  border-bottom: none;
+input.portfolioPic {
+  width: 275px;
+  height: 225px;
+  border: 1px solid black;
 }
 .projecttitle {
   text-align: center;
   padding-bottom: 10px;
 }
-.left {
-  float: left;
-}
-.right {
-  float: right;
+.detailsBox {
+  max-width: 275px;
 }
 #plugin {
   z-index: 10;
@@ -225,11 +181,13 @@ img.valet {
   outline: inherit;
 }
 .navbar {
-  background-color: transparent;
-  /*margin-top: 20px;*/
+  background-color: #071C2C;
   color: white;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+}
+.navbar-inverse {
+  background-image: none;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
   color: #005DA4;
@@ -274,6 +232,8 @@ img.valet {
 .gameButton {
   float: right;
 }
+
+/*Social media icon*/
 .social {
   margin: 0;
   padding: 0;
@@ -297,7 +257,6 @@ img.valet {
   width: 40px;
   height: 40px;
   color: #FFF;
-  /*background-color: #blue;*/
   font-size: 22px;
   text-align:center;
   padding-top: 12px;
