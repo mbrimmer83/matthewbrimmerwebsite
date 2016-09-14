@@ -1,4 +1,3 @@
-
 var $root = $('html, body');
 $(document).ready(function(){
   $('a').click(function() {
