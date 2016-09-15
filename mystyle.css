@@ -270,3 +270,23 @@ input.portfolioPic {
 .social .fa-linkedin:hover { /* round linkedin icon*/
   background: #0094BC;
 }
+/*Scroll Arrow*/
+.back-to-top {
+margin: 0;
+position: fixed;
+bottom: 0;
+right: 0;
+width: 70px;
+height: 70px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #071C2C;
+background-color: transparent;
+}
+.back-to-top i {
+  font-size: 60px;
+}
+ a:focus, a:hover {
+   color: #071C2C;
+ }
