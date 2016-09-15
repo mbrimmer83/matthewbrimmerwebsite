@@ -26,9 +26,12 @@ a:focus a:hover {
   margin-top: 50px;
   padding-top: 50px;
 }
+
+/*Skills bars*/
 .progress {background: rgba(255, 255, 255, 1); background: -webkit-linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%); background: linear-gradient(to bottom, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%); border: 0px solid rgba(245, 245, 245, 1); border-radius: 4px; height: 20px;}
 .progress-bar-custom {background: rgba(124, 130, 135, 1); background: -webkit-linear-gradient(top, rgba(212, 212, 212, 1) 0%, rgba(124, 130, 135, 1) 100%); background: linear-gradient(to bottom, rgba(212, 212, 212, 1) 0%, rgba(124, 130, 135, 1) 100%);}
 
+/*About Me Image*/
 img.matthew {
   display: flex;
   margin-left: auto;
@@ -124,6 +127,7 @@ input.portfolioPic {
 }
 .projecttitle {
   text-align: center;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 .detailsBox {
@@ -138,9 +142,8 @@ input.portfolioPic {
 #plugin {
   z-index: 10;
 }
-.btn:focus {
-  outline: inherit;
-}
+
+/*BootStrap NavBar*/
 .navbar {
   background-color: #071C2C;
   color: white;
@@ -156,6 +159,12 @@ input.portfolioPic {
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
   color: #005DA4;
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #FFFFFF;
+  background-color: #071C2C;
+  background-image: none;
+}
+
 /*Email form*/
 .form-control {
   width: 75%;
@@ -165,27 +174,26 @@ input.portfolioPic {
 }
 .title {
   text-align: center;
-  font-size: 50px;
+  font-size: 36px;
 }
 .titleContact {
   background-color: #e9e9e9;
   color: #071C2C;
-  text-shadow: 1px 1px 2px #393939;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
-  font-size: 50px;
+  font-size: 36px;
 }
 .skillsText {
   color: #071C2C;
-  text-shadow: 1px 1px 2px #393939;
   text-align: center;
 }
 .about-title {
   text-align: center;
-  font-size: 50px;
+  font-size: 36px;
   padding: 5px
 }
+/*BootStrap Buttons*/
 .btn-success {
   background-color: #9d9d9d;
   border-color: #9d9d9d;
@@ -197,6 +205,9 @@ input.portfolioPic {
   background-image: none;
   box-shadow: none;
   border: none;
+}
+.btn:focus {
+  outline: inherit;
 }
 .gameButton {
   float: right;
