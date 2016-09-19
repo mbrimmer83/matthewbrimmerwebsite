@@ -63,8 +63,9 @@ img.matthew:hover {
   text-shadow: 2px 2px 4px #9d9d9d;
   letter-spacing: -5px;
   line-height: 120px;
+  min-height: 800px;
 }
-.name {
+.welcome {
   color: #071C2C;
   text-shadow: 2px 2px 4px #666666;
 }
@@ -184,10 +185,6 @@ input.portfolioPic {
   text-align: center;
   font-size: 36px;
 }
-.skillsText {
-  color: #071C2C;
-  text-align: center;
-}
 .about-title {
   text-align: center;
   font-size: 36px;
@@ -271,7 +268,7 @@ input.portfolioPic {
   background: #0094BC;
 }
 /*Scroll Arrow*/
-.back-to-top {
+/*.back-to-top {
 margin: 0;
 position: fixed;
 bottom: 0;
@@ -289,4 +286,4 @@ background-color: transparent;
 }
  a:focus, a:hover {
    color: #071C2C;
- }
+ }*/

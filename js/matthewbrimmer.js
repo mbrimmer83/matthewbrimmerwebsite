@@ -7,3 +7,12 @@ $(document).ready(function(){
       return false;
   });
 });
+
+$(document).ready(function() {
+  $(".welcome").typed({
+    strings: ['^300 Welcome <br> ^300 my name is <br> ^300 Matthew Brimmer <br> and <br> ^300 I\'m a Full Stack Developer'],
+    typeSpeed: 0,
+    showCursor: false,
+    contentType: 'html'
+  });
+});
