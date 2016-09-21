@@ -16,3 +16,5 @@ $(document).ready(function() {
     contentType: 'html'
   });
 });
+
+// 'W','e','l','c','o','m','e'
