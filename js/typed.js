@@ -240,27 +240,27 @@ var counter = 0;
 							}
 						}
 						console.log(nextString);
+						console.log(curString);
+						console.log(curString.length);
+						console.log(curStrPos);
+						// Call after each character is typed.
+						var nextChar = false;
+						if (curStrPos != 0) {
+							nextChar = true;
+						}
+						if (nextString.substr(nextString.length - 5) === ' <br>') {
+							nextChar = false;
+						}
+						if (nextString.substr(nextString.length - 5) === '<br> ') {
+							nextChar = true;
+						}
+						if (nextChar === true) {
+							self.options.charTyped();
+						}
 						// add characters one by one
 						curStrPos++;
 						// loop the function
 						self.typewrite(curString, curStrPos);
-
-						// Call after each character is typed.
-						var nextChar = true;
-						if (nextString.substr(nextString.length - 4) !== ' <br>') {
-							nextChar = false;
-							console.log("first happened");
-						}
-						if (nextString.substr(nextString.length - 5) === '<br> ') {
-							nextChar = false;
-							console.log("second happened");
-						}
-						if (nextChar === false) {
-							self.options.charTyped();
-							counter += 1;
-							console.log(counter);
-						}
-
 					}
 					// end of character pause
 				}, charPause);
