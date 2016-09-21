@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-
+var counter = 0;
 
 
 ! function($) {
@@ -239,11 +239,28 @@
 								self.el.text(nextString);
 							}
 						}
-
+						console.log(nextString);
 						// add characters one by one
 						curStrPos++;
 						// loop the function
 						self.typewrite(curString, curStrPos);
+
+						// Call after each character is typed.
+						var nextChar = true;
+						if (nextString.substr(nextString.length - 4) !== ' <br>') {
+							nextChar = false;
+							console.log("first happened");
+						}
+						if (nextString.substr(nextString.length - 5) === '<br> ') {
+							nextChar = false;
+							console.log("second happened");
+						}
+						if (nextChar === false) {
+							self.options.charTyped();
+							counter += 1;
+							console.log(counter);
+						}
+
 					}
 					// end of character pause
 				}, charPause);
@@ -431,7 +448,9 @@
 		//callback for every typed string
 		onStringTyped: function() {},
 		// callback for reset
-		resetCallback: function() {}
+		resetCallback: function() {},
+		// callback for each character
+		charTyped: function() {}
 	};
 
 
