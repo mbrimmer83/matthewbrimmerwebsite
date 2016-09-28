@@ -239,7 +239,10 @@ var counter = 0;
 								self.el.text(nextString);
 							}
 						}
-
+						console.log(nextString);
+						console.log(curString);
+						console.log(curString.length);
+						console.log(curStrPos);
 						// Call after each character is typed.
 						var nextChar = false;
 						if (curStrPos !== 0) {

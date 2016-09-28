@@ -11,9 +11,11 @@ $(document).ready(function(){
 $(document).ready(function() {
   $(".welcome").typed({
     strings: ['^300 Welcome <br> ^300 my name is <br> ^300 Matthew Brimmer <br> and <br> ^300 I\'m a Full Stack Developer'],
-    typeSpeed: 0,
+    typeSpeed: 75,
     showCursor: false,
     contentType: 'html',
-    charTyped: function(){console.log("This Happened!");}
+    charTyped: function(){
+      $.playSound('./audio/keyboard_key');
+    }
   });
 });
