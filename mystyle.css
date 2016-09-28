@@ -17,7 +17,8 @@ h1 {
   margin: 0;
 }
 a {
-  color: #9d9d9d;
+  color: #071C2C;
+  text-decoration: underline;
 }
 a:focus a:hover {
   color: #9d9d9d;
@@ -69,7 +70,7 @@ img.matthew:hover {
   color: #071C2C;
   text-shadow: 2px 2px 4px #666666;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .welcome {
         font-size: 50px;
     }
