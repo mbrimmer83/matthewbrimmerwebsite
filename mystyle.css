@@ -69,6 +69,11 @@ img.matthew:hover {
   color: #071C2C;
   text-shadow: 2px 2px 4px #666666;
 }
+@media only screen and (max-width: 720px) {
+    .welcome {
+        font-size: 50px;
+    }
+}
 #box-1 {
   background-color: #FFFFFF;
   color: #071C2C;
