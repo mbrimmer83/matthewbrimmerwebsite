@@ -18,7 +18,7 @@ $(document).ready(function() {
     backspace: function(curString, curStrPos){
       setTimeout(function(){
         if (self.arrayPos == 1){
-                self.stopNum = 3;
+                self.stopNum = 55;
             }
         else{
                 self.stopNum = 12;
