@@ -245,7 +245,7 @@ var counter = 0;
 						if (curStrPos !== 0) {
 							nextChar = true;
 						}
-						if (nextString.substr(nextString.length - 5) === ' <br>') {
+						if (nextString.substr(nextString.length - 4) === '<br>') {
 							nextChar = false;
 						}
 						if (nextString.substr(nextString.length - 5) === '<br> ') {

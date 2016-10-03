@@ -70,9 +70,43 @@ img.matthew:hover {
   color: #071C2C;
   text-shadow: 2px 2px 4px #666666;
 }
+.myNameIs {
+  color: #071C2C;
+  text-shadow: 2px 2px 4px #666666;
+}
+.name {
+  color: #071C2C;
+  text-shadow: 2px 2px 4px #666666;
+}
+.and {
+  color: #071C2C;
+  text-shadow: 2px 2px 4px #666666;
+}
+.jobTitle {
+  color: #071C2C;
+  text-shadow: 2px 2px 4px #666666;
+}
+.andHighlighted {
+  background-color: lightblue;
+}
+.andChanged{
+  color: red;
+}
 @media only screen and (max-width: 768px) {
     .welcome {
-        font-size: 50px;
+      font-size: 50px;
+    }
+    .myNameIs {
+      font-size: 50px;
+    }
+    .name {
+      font-size: 50px;
+    }
+    .and {
+      font-size: 50px;
+    }
+    .jobTitle {
+      font-size: 50px;
     }
 }
 #box-1 {

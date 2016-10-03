@@ -10,23 +10,65 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   $(".welcome").typed({
-    strings: ['^300 Welcome <br> ^300 my name is <br> ^300 Matthew Brimmer <br> ^200 and <br> ^300 I\'m a Fill Stock Developer', ' ^300 Welcome <br> ^300 my name is <br> ^300 Matthew Brimmer <br> ^200 and <br> ^300 I\'m a Fill Stock Developer'],
+    strings: ['^300 Welcome<br>'],
     typeSpeed: 75,
     showCursor: false,
-    backSpeed: 20,
     contentType: 'html',
-    backspace: function(curString, curStrPos){
-      setTimeout(function(){
-        if (self.arrayPos == 1){
-                self.stopNum = 55;
-            }
-        else{
-                self.stopNum = 12;
-            }
-      });
-    },
     charTyped: function(){
       $.playSound('./audio/keyboard_key');
+    },
+    callback: function(){
+      $(".myNameIs").typed({
+        strings: ['^300 my name is<br>'],
+        typeSpeed: 75,
+        showCursor: false,
+        contentType: 'html',
+        charTyped: function(){
+          $.playSound('./audio/keyboard_key');
+        },
+        callback: function() {
+          $(".name").typed({
+            strings: ['^300 Matthew Brimmer<br>'],
+            typeSpeed: 75,
+            showCursor: false,
+            contentType: 'html',
+            charTyped: function(){
+              $.playSound('./audio/keyboard_key');
+            },
+            callback: function() {
+              $(".and").typed({
+                strings: ['^200 and<br>'],
+                typeSpeed: 75,
+                showCursor: false,
+                contentType: 'html',
+                charTyped: function(){
+                  $.playSound('./audio/keyboard_key');
+                },
+                callback: function() {
+                  $(".jobTitle").typed({
+                    strings: ['^300 I\'m a Full Stack Developer'],
+                    typeSpeed: 75,
+                    showCursor: false,
+                    contentType: 'html',
+                    charTyped: function(){
+                      $.playSound('./audio/keyboard_key');
+                    },
+                    callback: function() {
+                      $(".and").addClass("andHighlighted");
+                      setTimeout(function(){
+                        $(".and").removeClass("andHighlighted");
+                        $(".and").addClass("andChanged");
+                        var pos = $('.and').position();
+                        console.log(pos);
+                      }, 1500);
+                    }
+                  });
+                }
+              });
+            }
+          });
+        }
+      });
     }
   });
 });
