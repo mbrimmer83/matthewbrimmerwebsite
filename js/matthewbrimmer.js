@@ -1,4 +1,5 @@
 var $root = $('html, body');
+// Smooth Scrool
 $(document).ready(function(){
   $('a').click(function() {
       $root.animate({
@@ -6,22 +7,31 @@ $(document).ready(function(){
       }, 500);
       return false;
   });
-});
-$(document).ready(function(){
-  $('ul.sliderUl li.slider:even').addClass('even');
-  $('ul.sliderUl li.slider:odd').addClass('odd');
-
-  setTimeout(RotateCarousel, 1500);
-
-  function RotateCarousel() {
-      $("ul.sliderUl li.slider:first-child").animate({ marginLeft: -200 }, 1500, 'linear', function () {
-          $("ul.sliderUl li.slider:first-child").appendTo('ul.sliderUl');
-          $("ul.sliderUl li.slider:last-child").css('margin-Left', 0);
-          RotateCarousel();
+  // Bx Slider one
+  $('.bxslider.one').bxSlider({
+    minSlides: 6,
+    maxSlides: 6,
+    slideWidth: 170,
+    slideMargin: 10,
+    ticker: true,
+    speed: 10000,
+    tickerHover: false,
+    autoDirection: 'next',
+    useCSS: false
   });
-}
-});
-$(document).ready(function() {
+  // Bx slider two
+  $('.bxslider.two').bxSlider({
+    minSlides: 6,
+    maxSlides: 6,
+    slideWidth: 170,
+    slideMargin: 10,
+    ticker: true,
+    speed: 10000,
+    tickerHover: false,
+    autoDirection: 'prev',
+    useCSS: false
+  });
+  // Typing js
   $(".myNameIs").typed({
     strings: ['^300 Matthew Brimmer<br>'],
     typeSpeed: 75,
