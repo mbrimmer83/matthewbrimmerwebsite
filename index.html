@@ -11,53 +11,135 @@
   <link rel="stylesheet" href="mystyle.css">
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="56">
+<body data-spy="scroll" data-target=".navbar">
   <!-- navbar -->
-  <nav role="navigation" class="navbar navbar-fixed-top navbar-inverse">
+  <nav role="navigation" class="navbar navbar-fixed-top navbar-inverse container">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="http://www.matthewbrimmer.com" class="navbar-brand">Matthew Brimmer</a>
-    </div>
-    <!-- Collection of nav links, forms, and other content for toggling -->
-    <div id="navbarCollapse" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="#top">Top</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">My Work</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <!-- social media icons -->
-      <div class="social">
-        <ul>
-          <li><a href="https://www.facebook.com/matthew.brimmer.9"><i class="fa fa-lg fa-facebook"></i></a></li>
-          <li><a href="https://github.com/mbrimmer83"><i class="fa fa-lg fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/matthew-brimmer-5b3342bb"><i class="fa fa-lg fa-linkedin"></i></a></li>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#top">Top</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- social media icons -->
+        <div class="social">
+          <ul>
+            <li><a href="https://www.facebook.com/matthew.brimmer.9"><i class="fa fa-lg fa-facebook"></i></a></li>
+            <li><a href="https://github.com/mbrimmer83"><i class="fa fa-lg fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/matthew-brimmer-5b3342bb"><i class="fa fa-lg fa-linkedin"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
+
 
   <div class="container" id="top">
     <div class="row">
       <div class="col-md-12">
         <div id="box-0">
-          <span class="welcome"></span>
           <span class="myNameIs"></span>
-          <span class="name"></span>
-          <span class="and"></span>
           <span class="jobTitle"></span>
         </div>
       </div>
     </div>
 
-    <div class="container" id="about">
+      <div class="container" id="box-2">
+        <h1 class="projecttitle" id="work">My Work</h1>
+        <!-- row one -->
+        <div class="row projectContainer">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <li>
+              <a href="http://coffeestore.matthewbrimmer.com">
+                <figure>
+                  <img src="./images/coffee.png" alt="" class="portfolioPic">
+                  <figcaption><p>DC Roasters<br> Full stack e-commerce website built on the MEAN Stack.</p></figcaption>
+                </figure>
+              </a>
+            </li>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <li>
+              <a href="http://sportakus.surge.sh">
+                <figure>
+                  <img src="./images/sportakus.png" alt="" class="portfolioPic">
+                  <figcaption><p>Sportakus<br> Frontend sports aggragator built with AngularJS and BootStrap</p></figcaption>
+                </figure>
+              </a>
+            </li>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <li>
+              <a href="">
+                <figure>
+                  <img src="./images/valet.png" alt="" class="portfolioPic">
+                  <figcaption><p>Valet Me<br> Full Stack cloud based parking management system. Built with Ionic, AngularJS, NodeJS, Express, and PostgreSQL.</p></figcaption>
+                </figure>
+              </a>
+            </li>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <li>
+              <a href="./memorygame/index.html">
+                <figure>
+                  <img src="./images/memory.png" alt="" class="portfolioPic">
+                  <figcaption><p>The Memory Game<br> Frontend matching game built with JQuery.</p></figcaption>
+                </figure>
+              </a>
+            </li>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <li>
+              <a href="http://shielded-everglades-11512.herokuapp.com/">
+                <figure>
+                  <img src="./images/chirp.png" alt="" class="portfolioPic">
+                  <figcaption><p>Chirp<br> Full stack Twiiter clone built on Python, Flask, Jinja, and PostgreSQL.</p></figcaption>
+                </figure>
+              </a>
+            </li>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <li>
+              <a href="./reactjs/index.html">
+                <figure>
+                  <img src="./images/planner.png" alt="" class="portfolioPic">
+                  <figcaption><p>Daily Planner<br> Frontend React JS application.</figcaption>
+                </figure>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="skills">
+        <div class="col-md-12" id="box-3">
+          <h1 class="title">Skills</h1>
+          <div class="sliderDiv">
+            <ul class="sliderUl">
+              <li class="slider">Item 1</li>
+              <li class="slider">Item 2</li>
+              <li class="slider">Item 3</li>
+              <li class="slider">Item 4</li>
+              <li class="slider">Item 5</li>
+              <li class="slider">Item 6</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="about">
       <div class="row">
         <div class="col-md-6">
           <div id="box-1">
@@ -70,195 +152,26 @@
           <div id="box-1">
             <span>
               <h1 class="about-title">About Me</h1>
-              <p>I was raised just outside of Atlanta Ga and absolutely love the southern heat.</p>
-              <p>My passion is to solve real world problems that make peoples live easier and better. Computers were built to solve problems and I was built to make computers do just that.</p>
-              <h2>My Interests and Hobbies:</h2>
-              <p>* Programming</p>
-              <p>* Science Fiction Movies</p>
-              <p>* Football</p>
-              <p>* Motivational and self improvement books</p>
-              <p>* Running</p>
-              <p>* Physics and Chemistry</p>
+              <p class="glyphicon glyphicon-chevron-right">&#09I was raised just outside of Atlanta Ga and absolutely love the southern heat.</p>
+              <p class="glyphicon glyphicon-chevron-right">&#09My passion is to solve real world problems that make peoples live easier and better. Computers were built to solve problems and I was built to make computers do just that.</p>
+              <h2>My Interests and Hobbies</h2>
+              <p class="glyphicon glyphicon-chevron-right">&#09Programming</p><br>
+              <p class="glyphicon glyphicon-chevron-right">&#09Science Fiction Movies</p><br>
+              <p class="glyphicon glyphicon-chevron-right">&#09Football</p><br>
+              <p class="glyphicon glyphicon-chevron-right">&#09Motivational and self improvement books</p><br>
+              <p class="glyphicon glyphicon-chevron-right">&#09Running</p><br>
+              <p class="glyphicon glyphicon-chevron-right">&#09Physics and Chemistry</p><br>
               <h2>Favorite Quotes</h2>
-              <p>It's not that I'm so smart, it's just that I stay with problems longer.</p>
-              <p>-- Albert Einstein</p>
-              <p>Courage is not having the strength to go on; it is going on when you don't have the strength.</p>
-              <p>-- Theodore Roosevelt</p>
-              <button href="#resumeModal" id="modal" data-toggle="modal" data-target="#resumeModal">Get my Resume</button>
-              <!-- <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a> -->
+              <p class="glyphicon glyphicon-chevron-right">&#09It's not that I'm so smart, it's just that I stay with problems longer.</p><br>
+              <p class="glyphicon glyphicon-chevron-right">&#09&#09--Albert Einstein</p><br>
+              <p class="glyphicon glyphicon-chevron-right">&#09Courage is not having the strength to go on; it is going on when you don't have the strength.</p><br>
+              <p class="glyphicon glyphicon-chevron-right">&#09&#09--Theodore Roosevelt</p>
             </span>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid" id="box-2">
-        <h1 class="projecttitle" id="work">My Work</h1>
-        <!-- row one -->
-        <div class="row projectContainer">
-          <div class="col-xs-12 col-md-4">
-            <h3>DC Roasters</h3>
-            <input type="image" src="./images/coffee.png" class="portfolioPic" title="DC Roaster Details" href="#roasterModal" id="modal" data-toggle="modal" data-target="#roasterModal"><br>
-            <p class="detailsBox">DC Roasters is a full stack e-commerce website for users to purchase coffee via a monthly subscriptions. Users signup, login, place orders and make payments.</p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <h3>Sportakus</h3>
-            <input type="image" src="./images/sportakus.png" class="portfolioPic" title="Sportakus Details" href="#sportakusModal" id="modal" data-toggle="modal" data-target="#sportakusModal"><br>
-            <p class="detailsBox">Sportakus is a frontend sports aggragator that allows the user to select a sport and then select a venue displayed on a google map. The user can see the events for that choosen sports venue and ticket information from Ticket Master.</p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <h3>BlackJack</h3>
-            <input type="image" src="./images/blackjack.png" class="portfolioPic" title="BlackJack Details" href="#blackjackModal" id="modal" data-toggle="modal" data-target="#blackjackModal"><br>
-            <p class="detailsBox">BlackJack Casino is a frontend blackjack game where the user plays against the dealer. The game includes score keeping and checks for winners and busts.</p>
-          </div>
-        </div>
-
-        <!-- row two -->
-        <div class="row projectContainer">
-          <div class="col-xs-12 col-md-4">
-            <h3>Memory Game</h3>
-            <input type="image" src="./images/memory.png" class="portfolioPic" title="Memory Game Details" href="#memoryModal" id="modal" data-toggle="modal" data-target="#memoryModal"><br>
-            <p class="detailsBox">The Memory Game is a matching game that requires the user to select a card and then find its match after the card turns over. The game is customized for DigitalCrafts. </p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <h3>Chirp</h3>
-            <input type="image" src="./images/chirp.png" class="portfolioPic" title="Chirp Details" href="#chirpModal" id="modal" data-toggle="modal" data-target="#chirpModal"><br>
-            <p class="detailsBox">The Chirp application is a dynamic database driven web application that is modeled after Twitter. Users can chirp messages, follow friends, like chirps, and rechirp other chirps.</p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <h3>Daily Planner</h3>
-            <input type="image" src="./images/planner.png" class="portfolioPic" title="Daily Planner Details" href="#plannerModal" id="modal" data-toggle="modal" data-target="#plannerModal"><br>
-            <p class="detailsBox">The Daily Planner is a frontend React JS application that allows users to schedule hourly appointments with their name and phone number Users can edit and cancel appointments.</p>
-          </div>
-        </div>
-
-        <!-- row three -->
-        <div class="row projectContainer">
-          <div class="col-xs-12 col-md-4 offset-md-3">
-            <h3>Valet Me</h3>
-            <input type="image" src="./images/valet.png" class="portfolioPic" title="Valet Me Details" href="#valetModal" id="modal" data-toggle="modal" data-target="#valetModal"><br>
-            <p class="detailsBox">Valet Me is a Full Stack cloud based parking management system. The mobile app allows user to signup, login, request there car be returned, and tip or pay the valet company. Push notification are used for notifying users when there car is ready and includes a live interactive administration panel that uses socket.io to help manage the parking lot.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" id="skills">
-        <div class="col-md-12" id="box-3">
-          <table>
-            <h1 class="title">Skills</h1>
-            <tr>
-              <td>HTML 5</td>
-              <td>CSS 3</td>
-              <td>Bootstrap</td>
-            </tr>
-            <tr>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                  90%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                  75%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                  80%
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Javascript</td>
-              <td>JQuery</td>
-              <td>Angular Js</td>
-            </tr>
-            <tr>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-                  85%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                  70%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
-                  65%
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Node Js</td>
-              <td>Express JS</td>
-              <td>Mongo DB</td>
-            </tr>
-            <tr>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                  50%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                  60%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                  60%
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Socket IO</td>
-              <td>Python</td>
-              <td>PostgreSQL</td>
-            </tr>
-            <tr>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                  60%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                  60%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                  70%
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>React JS</td>
-              <td>JSX</td>
-              <td>Ionic</td>
-            </tr>
-            <tr>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-                  40%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-                  40%
-                </div>
-              </td>
-              <td class="progress">
-                <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                  60%
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="row" id="contact">
+      <div class="row box-4" id="contact">
         <h1 class="titleContact">Contact me</h1>
         <div class="col-md-6 formStyle">
             <form name="sentMessage" id="contactForm" novalidate>
@@ -303,8 +216,8 @@
             <p>Matthew Brimmer</p>
             <p>Phone: 770-900-2043</p>
             <p>Email: mbrimmer1@gmail.com</p>
-            <a href="https://github.com/mbrimmer83">https://github.com/mbrimmer83</a><br>
-            <a href="https://linkedin.com/in/matthewbrimmer">https://linkedin.com/in/matthewbrimmer</a>
+            <!-- <a href="https://github.com/mbrimmer83">https://github.com/mbrimmer83</a><br>
+            <a href="https://linkedin.com/in/matthewbrimmer">https://linkedin.com/in/matthewbrimmer</a> -->
           </div>
         </div>
       </div>
@@ -329,7 +242,7 @@
             </div>
             <div class="footer-col col-md-4">
               <h3>MatthewBrimmer.com</h3>
-              <p>This site was created and is maintained by Matthew Brimmer. I would like to thank Bootstrap Freelancer for php contact form.</p>
+              <p>This site was created and is maintained by Matthew Brimmer.</p>
             </div>
           </div>
         </div>
@@ -363,203 +276,6 @@
       </div>
     </div>
 
-    <!-- DC Roasters Modal -->
-    <div id="roasterModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="myModalLabel">DC Roaster</h2>
-          </div>
-          <div class="modal-body">
-            <h3>Languages and Technologies</h3>
-            <ul>
-              <li>Javascipt</li>
-              <li>Angular JS</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>Node JS</li>
-              <li>Bootstrap</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-            <a href="http://coffeestore.matthewbrimmer.com">Live Demo</a><br>
-            <a href="https://github.com/mbrimmer83/CoffeeApp">View Repo on GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sportakus Modal -->
-    <div id="sportakusModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="myModalLabel">Sportakus</h2>
-          </div>
-          <div class="modal-body">
-            <h3>Languages and Technologies</h3>
-            <ul>
-              <li>Javascipt</li>
-              <li>Angular JS</li>
-              <li>Bootstrap</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-            <a href="http://sportakus.surge.sh">Live Demo</a><br>
-            <a href="https://github.com/DigitalCrafts-May-2016-Cohort/sportakus">Sportakus GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- BlackJack Modal -->
-    <div id="blackjackModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">BlackJack</h4>
-          </div>
-          <div class="modal-body">
-            <h3>Languages and Technologies</h3>
-            <ul>
-              <li>Javascipt</li>
-              <li>JQuery</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-            <a href="./blackjack/index.html">Live Demo</a><br>
-            <a href="https://github.com/mbrimmer83/blackjack">BlackJack GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Memory Modal -->
-    <div id="memoryModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="myModalLabel">Memory Game</h2>
-          </div>
-          <div class="modal-body">
-            <h3>Languages and Technologies</h3>
-            <ul>
-              <li>Javascipt</li>
-              <li>Jquery</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-            <a href="./memorygame/index.html">Live Demo</a><br>
-            <a href="https://github.com/mbrimmer83/MemoryGame">Memory Game GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Chirp Modal -->
-    <div id="chirpModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="myModalLabel">Chirp</h2>
-          </div>
-          <div class="modal-body">
-            <h3>Languages and Technologies</h3>
-            <ul>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>Jinja</li>
-              <li>PostgreSQL</li>
-              <li>Bootstrap</li>
-              <li>JQuery</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-            <a href="http://shielded-everglades-11512.herokuapp.com/">Live Demo</a><br>
-            <a href="https://github.com/mbrimmer83/chirpapp">Chirp GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Planner Modal -->
-    <div id="plannerModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="myModalLabel">Daily Planner</h2>
-          </div>
-          <div class="modal-body">
-            <h3>Languages and Technologies</h3>
-            <ul>
-              <li>Javascipt</li>
-              <li>React JS</li>
-              <li>Flux</li>
-              <li>JSX</li>
-              <li>Webpack</li>
-              <li>Babel</li>
-              <li>Node JS</li>
-              <li>Bootstrap</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-            <a href="./reactjs/index.html">Live Demo</a><br>
-            <a href="https://github.com/mbrimmer83/reactModal">Daily Planner GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Valet Me Modal -->
-    <div id="valetModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="myModalLabel">Valet Me</h2>
-          </div>
-          <div class="modal-body">
-            <h3>Valet Me Demo Movie</h3><br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vm2NaQpZ38E" frameborder="0" allowfullscreen></iframe><br>
-            <h3>Languages and Technologies</h3>
-            <ul>
-              <li>Javascipt</li>
-              <li>Angular JS</li>
-              <li>PostgreSQL</li>
-              <li>Socket.IO</li>
-              <li>Ionic</li>
-              <li>Express</li>
-              <li>Node JS</li>
-              <li>Bootstrap</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-            </ul>
-            <a href="http://floating-castle-43284.herokuapp.com/#/home">Live Demo</a><br>
-            <a href="https://github.com/mbrimmer83/finalproject">Valet Me GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- script files -->
     <script src="js/jquery.js"></script>
     <script src="js/typed.js"></script>

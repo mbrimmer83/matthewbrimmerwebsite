@@ -7,10 +7,23 @@ $(document).ready(function(){
       return false;
   });
 });
+$(document).ready(function(){
+  $('ul.sliderUl li.slider:even').addClass('even');
+  $('ul.sliderUl li.slider:odd').addClass('odd');
 
+  setTimeout(RotateCarousel, 1500);
+
+  function RotateCarousel() {
+      $("ul.sliderUl li.slider:first-child").animate({ marginLeft: -200 }, 1500, 'linear', function () {
+          $("ul.sliderUl li.slider:first-child").appendTo('ul.sliderUl');
+          $("ul.sliderUl li.slider:last-child").css('margin-Left', 0);
+          RotateCarousel();
+  });
+}
+});
 $(document).ready(function() {
-  $(".welcome").typed({
-    strings: ['^300 Welcome<br>'],
+  $(".myNameIs").typed({
+    strings: ['^300 Matthew Brimmer<br>'],
     typeSpeed: 75,
     showCursor: false,
     contentType: 'html',
@@ -18,56 +31,14 @@ $(document).ready(function() {
       $.playSound('./audio/keyboard_key');
     },
     callback: function(){
-      $(".myNameIs").typed({
-        strings: ['^300 my name is<br>'],
+      $(".jobTitle").typed({
+        strings: ['^300 Software Engineer<br>'],
         typeSpeed: 75,
         showCursor: false,
         contentType: 'html',
         charTyped: function(){
           $.playSound('./audio/keyboard_key');
         },
-        callback: function() {
-          $(".name").typed({
-            strings: ['^300 Matthew Brimmer<br>'],
-            typeSpeed: 75,
-            showCursor: false,
-            contentType: 'html',
-            charTyped: function(){
-              $.playSound('./audio/keyboard_key');
-            },
-            callback: function() {
-              $(".and").typed({
-                strings: ['^200 and<br>'],
-                typeSpeed: 75,
-                showCursor: false,
-                contentType: 'html',
-                charTyped: function(){
-                  $.playSound('./audio/keyboard_key');
-                },
-                callback: function() {
-                  $(".jobTitle").typed({
-                    strings: ['^300 I\'m a Full Stack Developer'],
-                    typeSpeed: 75,
-                    showCursor: false,
-                    contentType: 'html',
-                    charTyped: function(){
-                      $.playSound('./audio/keyboard_key');
-                    },
-                    callback: function() {
-                      $(".and").addClass("andHighlighted");
-                      setTimeout(function(){
-                        $(".and").removeClass("andHighlighted");
-                        $(".and").addClass("andChanged");
-                        var pos = $('.and').position();
-                        console.log(pos);
-                      }, 1500);
-                    }
-                  });
-                }
-              });
-            }
-          });
-        }
       });
     }
   });
