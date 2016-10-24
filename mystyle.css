@@ -139,6 +139,14 @@ img.matthew:hover {
 -moz-filter: none;
 -ms-filter: none;
 }
+@media only screen and (max-width: 480px) {
+  img.matthew {
+    margin-top: 10px;
+  }
+  #box-1.imgBox {
+    min-height: 500px;
+  }
+}
 
 
 /*Contact Box*/
@@ -212,8 +220,7 @@ textarea {
   background: none;
   border: none;
   box-shadow: none;
-  padding: 20px 0 0 0;
-  position: relative;
+  padding: 30px 0 0 0;
 }
 .bxslider.one {
 
@@ -227,7 +234,20 @@ textarea {
   margin-bottom: 125px;
   margin-top: 125px;
 }
-
+@media only screen and (max-width: 480px){
+  .title {
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .bx-wrapper {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  #box-3 {
+    min-height: 300px;
+  }
+}
 
 /*Work section*/
 /*#######################################*/
