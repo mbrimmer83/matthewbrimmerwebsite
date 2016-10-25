@@ -40,7 +40,7 @@ a:focus a:hover {
 }
 /*main intro section*/
 /*#############################################*/
-#box-0 {
+.box-0 {
   background-image: url("images/circutBackground.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -58,16 +58,17 @@ a:focus a:hover {
   min-height: 950px;
   min-width: 100%;
 }
-
+@media only screen and (max-width: 480px) {
+  .box-0 {
+    min-height: 500px !important;
+  }
+}
 @media only screen and (max-width: 768px) {
     .myNameIs {
       font-size: 30px;
     }
     .jobTitle {
       font-size: 30px;
-    }
-    #box-0 {
-
     }
 }
 /*Mobile media queries*/
@@ -172,21 +173,28 @@ img.matthew:hover {
   font-size: 25px;
   padding-left: 30px;
   min-height: 625px;
+  position: relative;
 }
 .form-control {
   width: 75%;
 }
 .emailButton {
   text-align: center;
+  background-color: black;
 }
-textarea {
-  background: transparent;
-  background-color: inherit;
-  color: white;
-  font-size: 5em;
+.infoBox {
+  position: absolute;
+  bottom: 0;
 }
-
-
+@media only screen and (max-width: 480px)  {
+  .infoBox {
+    position: relative;
+    bottom: auto;
+  }
+  .formStyle {
+    min-height: inherit;
+  }
+}
 
 
 
