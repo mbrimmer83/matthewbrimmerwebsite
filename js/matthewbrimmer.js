@@ -1,7 +1,7 @@
 var $root = $('html, body');
 // Smooth Scrool
 $(document).ready(function(){
-  $('a').click(function() {
+  $('a.scrollLink').click(function() {
       $root.animate({
           scrollTop: $( $.attr(this, 'href') ).offset().top-56
       }, 500);

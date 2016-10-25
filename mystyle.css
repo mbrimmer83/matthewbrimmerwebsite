@@ -8,10 +8,6 @@ table {
   border-collapse: separate;
   border-spacing: 10px 10px;
 }
-img {
-  /*border-bottom: solid 3px black;*/
-
-}
 h1 {
   padding-left: 10px;
   margin: 0;
@@ -26,6 +22,9 @@ a:focus a:hover {
 .modal {
   overflow-y: auto;
   width: 70%;
+  position: absolute;
+  top: 5%;
+  left: 15%;
 }
 
 .gitlinks {
@@ -96,11 +95,6 @@ a:focus a:hover {
     img.matthew {
       max-width: 300px;
     }
-
-    .projectContainer li {
-      margin: 0em !important;
-      border: 0px !important;
-    }
 }
 .col-md-4.col-sm-6.col-xs-12 {
   padding: 0;
@@ -118,9 +112,15 @@ a:focus a:hover {
   width: 100%;
   min-height: 750px;
   font-size: 17px;
-  padding: 10px 25px 0 20px;
+  padding: 25px 100px 0 0;
+  line-height: normal;
+}
+.about {
+
 }
 .about-title {
+  max-width: 100%;
+  background-color: white;
   text-align: center;
   font-size: 36px;
   padding: 5px
@@ -132,7 +132,6 @@ img.matthew {
   border-bottom: none;
   -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-  margin-top: 50px;
 }
 img.matthew:hover {
   filter: none;
@@ -140,12 +139,23 @@ img.matthew:hover {
 -moz-filter: none;
 -ms-filter: none;
 }
+
 @media only screen and (max-width: 480px) {
-  img.matthew {
-    margin-top: 10px;
-  }
+
   #box-1.imgBox {
     min-height: 500px;
+  }
+  #box-1 {
+    padding: 20px 20px 0 20px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #box-1.imgBox {
+    min-height: 500px;
+    padding: o;
+  }
+  #box-1 {
+    padding: 0 20px 0 25px;
   }
 }
 
@@ -242,6 +252,9 @@ img.matthew:hover {
   margin-bottom: 125px;
   margin-top: 125px;
 }
+.row {
+  margin: 0 0 0 0 !important;
+}
 @media only screen and (max-width: 480px){
   .title {
     font-size: 45px;
@@ -295,6 +308,9 @@ img.matthew:hover {
 	top: 0;
 	z-index: 100;
 }
+figcaption {
+  padding: 0 10px 0 10px;
+}
 
 .projectContainer figcaption p {
 	display: table-cell;
@@ -302,7 +318,7 @@ img.matthew:hover {
 	position: relative;
 	top: -40px;
   height: 300px;
-	width: 350px;
+	width: 100%;
 	vertical-align: middle;
 }
 
@@ -323,9 +339,11 @@ img.matthew:hover {
 	-moz-transform: scale(1.4);
 	transform: scale(1.4);
 }
-
-
-
+@media only screen and (max-width: 480px) {
+  .projectContainer img {
+    width: 90% !important;
+  }
+}
 
 img.portfolioPic {
   width: 490px;
@@ -383,7 +401,9 @@ input.portfolioPic {
 .navbar-collapse.in {
   overflow-y: hidden;
 }
-
+.resumeLink:hover {
+  cursor: pointer;
+}
 /*BootStrap Buttons*/
 .btn-success {
   background-color: #9d9d9d;
