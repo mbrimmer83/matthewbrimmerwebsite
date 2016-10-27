@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" media="screen">
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
   <link rel="stylesheet" href="./bootstrap-3.3.6-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
   <link href="jquery.bxslider.min.css" rel="stylesheet" />
@@ -64,7 +64,7 @@
         <div class="row projectContainer">
           <div class="col-xs-12 col-sm-6 col-md-4">
             <li>
-              <a href="http://coffeestore.matthewbrimmer.com">
+              <a data-toggle="modal" data-target="#coffeeModal">
                 <figure>
                   <img src="./images/coffee.png" alt="" class="portfolioPic">
                   <figcaption><p>DC Roasters<br>______________________________<br>Full-stack e-commerce website built on the MEAN Stack.</p></figcaption>
@@ -74,7 +74,7 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <li>
-              <a href="http://sportakus.surge.sh">
+              <a data-toggle="modal" data-target="#sportakusModal">
                 <figure>
                   <img src="./images/sportakus.png" alt="" class="portfolioPic">
                   <figcaption><p>Sportakus<br>______________________________<br>Front end sports aggragator built with Angular JS and BootStrap.</p></figcaption>
@@ -84,7 +84,7 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <li>
-              <a href="https://floating-castle-43284.herokuapp.com/#/home">
+              <a data-toggle="modal" data-target="#valetMeModal">
                 <figure>
                   <img src="./images/valet.png" alt="" class="portfolioPic">
                   <figcaption><p>Valet Me<br>______________________________<br>Full-stack cloud based parking management system. Built with Ionic, Angular JS, Node JS, Express, and PostgreSQL.</p></figcaption>
@@ -94,7 +94,7 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <li>
-              <a href="./memorygame/index.html">
+              <a data-toggle="modal" data-target="#memoryModal">
                 <figure>
                   <img src="./images/memory.png" alt="" class="portfolioPic">
                   <figcaption><p>The Memory Game<br>______________________________<br>Front end matching game built with JQuery.</p></figcaption>
@@ -104,7 +104,7 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <li>
-              <a href="http://shielded-everglades-11512.herokuapp.com/">
+              <a data-toggle="modal" data-target="#chirpModal">
                 <figure>
                   <img src="./images/chirp.png" alt="" class="portfolioPic">
                   <figcaption><p>Chirp<br>______________________________<br>Full-stack Twiiter clone built on Python, Flask, Jinja, and PostgreSQL.</p></figcaption>
@@ -114,10 +114,10 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <li>
-              <a href="./reactjs/index.html">
+              <a data-toggle="modal" data-target="#plannerModal">
                 <figure>
                   <img src="./images/planner.png" alt="" class="portfolioPic">
-                  <figcaption><p>Daily Planner<br>______________________________<br>Front end dailt planner built React JS.</figcaption>
+                  <figcaption><p>Daily Planner<br>______________________________<br>Front end daily planner built React JS.</figcaption>
                 </figure>
               </a>
             </li>
@@ -287,6 +287,233 @@
         </div>
       </div>
     </div>
+    <!-- Valet Me Modal -->
+    <div id="valetMeModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Valet Me</h4>
+          </div>
+          <div class="modal-body">
+            <p>Valet Me is a full stack cloud based parking management application that connects users via tha mobile application to parking companies via an online administration portal. User can request cars, pay, tip, and leave reviews.  </p>
+            <div class="modalList">
+              <h3>Languages and Technologies</h3>
+              <ul>
+                <li>Javascript</li>
+                <li>Ionic</li>
+                <li>Angular JS</li>
+                <li>PostgreSQL</li>
+                <li>Node JS</li>
+                <li>Socket IO</li>
+                <li>Bootstrap</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="valetDemoMovie">
+              <h3>Valet Me Demo Movie</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Vm2NaQpZ38E" frameborder="0" allowfullscreen></iframe>
+              <p>This app cannot be found in the app store but can be seen in this video or by request.</p>
+            </div>
+            <div class="gitHub">
+              <a href="https://github.com/mbrimmer83/finalproject">Chirp GitHub</a>
+            </div>
+            <div class="demo">
+              <a href="https://floating-castle-43284.herokuapp.com/#/home">View Live Demo</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Memory Game modal -->
+    <div id="memoryModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Memory Game</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modalList">
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>JQuery</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            </div>
+            <div class="modalImg">
+            <img src="./images/memorygame.png" alt=""/>
+            </div>
+            <div class="gitHub">
+              <a href="https://github.com/mbrimmer83/MemoryGame">Memory Game GitHub</a>
+            </div>
+            <div class="demo">
+              <a href="./memorygame">View Live Demo</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DC Roasters -->
+    <div id="coffeeModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">DC Roasters</h4>
+          </div>
+          <div class="modal-body">
+            <p>DC Roasters is a full stack ecommerce application for ordering coffee. The application allows users to create accounts, login and logout, and pay through stripe.</p>
+            <div class="modalList">
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>Angular JS</li>
+              <li>Node JS</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>Bootstrap</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            </div>
+            <div class="modalImg">
+              <img src="./images/dc-roasters.png" alt=""/>
+            </div>
+            <div class="gitHub">
+              <a href="https://github.com/mbrimmer83/coffeestore">DC Roaster GitHub</a>
+            </div>
+            <div class="demo">
+              <a href="http://coffeestore.matthewbrimmer.com/">View Live Demo</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sportakus Modal -->
+    <div id="sportakusModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Sportakus</h4>
+          </div>
+          <div class="modal-body">
+            <p>Sportakus is a front end sports aggragator that pulls sporting events from Sports radar and displays event data by venue on a Google map. Ticket information for each sports venue is displayed via the Ticket Master Api.</p>
+            <div class="modalList">
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>Angular JS</li>
+              <li>Bootstrap</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            </div>
+            <div class="modalImg">
+              <img src="./images/sportakus.png" alt="" height="200" width="200"/>
+            </div>
+            <div class="gitHub">
+              <a href="https://github.com/DigitalCrafts-May-2016-Cohort/sportakus">Sportakus GitHub</a>
+            </div>
+            <div class="demo">
+              <a href="http://sportakus.surge.sh/">View Live Demo</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Daily Planner -->
+    <div id="plannerModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Daily Planner</h4>
+          </div>
+          <div class="modal-body">
+            <p>Daily Planner is a front end web based daily planner that allows users to schedule appointments with names and phone numbers. Appointments can be edited and deleted.</p>
+            <div class="modalList">
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>React JS</li>
+              <li>WebPack</li>
+              <li>Babel</li>
+              <li>Node Js</li>
+              <li>Bootstrap</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            </div>
+            <div class="modalImg">
+              <img src="./images/planner.png" alt="" height="200" width="200"/>
+            </div>
+            <div class="gitHub">
+              <a href="https://github.com/mbrimmer83/reactModal">Daily Planner GitHub</a>
+            </div>
+            <div class="demo">
+              <a href="./reactjs">View Live Demo</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Chirp Modal -->
+    <div id="chirpModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Welcome to my Chirp application</h4>
+          </div>
+          <div class="modal-body">
+            <p>A full stack Twiiter clone that allows users to Chirp, follow and unfollow other users, like and rechirp chirps. Users can add and changes profie avatars and have custom timelines. </p>
+            <div class="modalList">
+            <h3>Languages and Technologies</h3>
+            <ul>
+              <li>Python</li>
+              <li>Javascript</li>
+              <li>Flask</li>
+              <li>Jinja</li>
+              <li>PostgreSQL</li>
+              <li>JQuery</li>
+              <li>Bootstrap</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            </div>
+            <div class="modalImg">
+              <img src="./images/chirp.png" alt="" height="200" width="200"/>
+            </div>
+            <div class="gitHub">
+              <a href="https://github.com/mbrimmer83/chirpapp">Chirp GitHub</a>
+            </div>
+            <div class="demo">
+              <a href="http://shielded-everglades-11512.herokuapp.com/">View Live Demo</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- script files -->
     <script src="js/jquery.js"></script>

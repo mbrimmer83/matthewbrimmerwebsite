@@ -13,7 +13,7 @@ h1 {
   margin: 0;
 }
 a {
-  color: white;
+  /*color: white;*/
 }
 a:focus a:hover {
   color: #9d9d9d;
@@ -22,10 +22,12 @@ a:focus a:hover {
 .modal {
   overflow-y: auto;
   width: 70%;
-  position: absolute;
-  top: 5%;
   left: 15%;
 }
+body.modal-open {
+  overflow: visible;
+}
+
 
 .gitlinks {
   margin-top: 50px;
@@ -324,6 +326,7 @@ figcaption {
 
 .projectContainer li:hover figcaption {
 	opacity: 1;
+  cursor: pointer;
 }
 .projectContainer img {
 	display: block;
@@ -333,7 +336,18 @@ figcaption {
 	transition: all 300ms;
 	max-width: 100%;
 }
+iframe {
+  width: 560px;
+  height: 316px;
+}
+.modalList {
+  display: inline-block;
+  margin-right: 50px;
+}
 
+.modalImg {
+  display: inline-block;
+}
 .projectContainer li:hover img {
 	-webkit-transform: scale(1.4);
 	-moz-transform: scale(1.4);
@@ -342,6 +356,10 @@ figcaption {
 @media only screen and (max-width: 480px) {
   .projectContainer img {
     width: 90% !important;
+  }
+  iframe {
+    width: 90%;
+    height: auto;
   }
 }
 
